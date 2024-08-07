@@ -1,13 +1,10 @@
 package com.example.revpay.controller;
 
 import com.example.revpay.dto.AccountDTO;
-import com.example.revpay.security.CustomUserDetails;
 import com.example.revpay.service.AccountService;
-import com.example.revpay.security.CustomUserDetailsService;
+import com.example.revpay.service.AccountServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

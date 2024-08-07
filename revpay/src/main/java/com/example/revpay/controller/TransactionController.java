@@ -2,6 +2,7 @@ package com.example.revpay.controller;
 
 import com.example.revpay.dto.TransactionDTO;
 import com.example.revpay.service.TransactionService;
+import com.example.revpay.service.TransactionServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

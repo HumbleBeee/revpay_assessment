@@ -3,6 +3,7 @@ package com.example.revpay.controller;
 import com.example.revpay.dto.AuthRequest;
 import com.example.revpay.dto.BusinessDTO;
 import com.example.revpay.service.BusinessService;
+import com.example.revpay.service.BusinessServiceImpl;
 import com.example.revpay.security.CustomUserDetailsService;
 import com.example.revpay.utils.JwtUtil;
 import lombok.RequiredArgsConstructor;
@@ -55,11 +56,11 @@ public class BusinessController {
 //        return ResponseEntity.ok(response);
     }
 
-    @PostMapping("/logout")
-    public ResponseEntity<Void> logout(@RequestParam Long businessId) {
-        businessService.logOut(businessId);
-        return ResponseEntity.ok().build();
-    }
+//    @PostMapping("/logout")
+//    public ResponseEntity<Void> logout(@RequestParam Long businessId) {
+//        businessService.logOut(businessId);
+//        return ResponseEntity.ok().build();
+//    }
 
     @PutMapping("/reset-password")
     public ResponseEntity<BusinessDTO> resetPassword(@RequestBody BusinessDTO request) {
